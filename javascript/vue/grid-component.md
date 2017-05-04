@@ -57,7 +57,7 @@ sortByメソッドが実行されるとkeyに該当するほうの値がひっ�
 ### 2.フィルタする
 ```
 filteredData: function () {
-  var sortKey = this.sortKey
+  var sortKey = this.sortKey // name or power
   var filterKey = this.filterKey && this.filterKey.toLowerCase()
   var order = this.sortOrders[sortKey] || 1
   var data = this.data
@@ -104,7 +104,17 @@ ref.https://codepen.io/nayucolony/pen/PmKaEa
 
 `data = data.slice().sort()`とすることで、コピーした配列を書き換えて格納できるので、元の配列が壊れない。
 
+### order
+`var order = this.sortOrders[sortKey] || 1`は値として1 or -1 をとる。
+|| 1
 
 
 
-    
+
+### 例えば、sortKeyがnameだった場合
+```
+a=a[name]
+b=b[name]
+```
+みたいになる。
+
