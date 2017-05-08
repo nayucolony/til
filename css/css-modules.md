@@ -87,7 +87,24 @@ styles: {
 }
 ```
 
+### ヘルパークラスとか
+他のファイルからimportしてきて使うパターン
+```
+/* colors.css */
+.primary {
+  color: #720;
+}
+.secondary {
+  color: #777;
+}
+/* other helper classes... */
+```
 
-
-
-
+```
+/* submit-button.css */
+.common { /* font-sizes, padding, border-radius */ }
+.normal {
+  composes: common;
+  composes: primary from "../shared/colors.css";
+}
+```
