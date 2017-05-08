@@ -108,3 +108,6 @@ styles: {
   composes: primary from "../shared/colors.css";
 }
 ```
+
+## refs
+[http://morishitter.hatenablog.com/entry/2015/09/28/103334](http://morishitter.hatenablog.com/entry/2015/09/28/103334)
