@@ -14,8 +14,8 @@ ref.https://www.slideshare.net/terurou/common-js
 これがない場合、外に定義したものを別のjsファイルで使いたいときはscriptタグ内に書いてグローバルにしておくとかするしかなかった。
 
 ## サンプル
-`exports`オブジェクトにいれると別ファイルか`require`して使うことができる。
-
+`exports`オブジェクトにいれると別ファイルか`require`して使うことができる。  
+また、requireしたファイルの中にあったとしてもexportsにセットされてない場合は外部でつかうことはできない。
 ```calc.js
 exports.add = function (x,y){
   return x + y;
