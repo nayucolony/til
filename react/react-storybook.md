@@ -31,7 +31,8 @@ http://localhost:6006
 
 ### 流れ
 - ストーリーを作る
-- 
+- 状態を追加する
+
 
 ### storiesOf
 `storiesOf('汎用ボタン',module)`
