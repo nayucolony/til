@@ -37,3 +37,35 @@ http://localhost:6006
 `storiesOf('汎用ボタン',module)`
 - 第一引数はメニューに表示されるラベルテキスト
 - 第二引数の`module` is 何
+
+使うときは
+```
+import { storiesOf } from '@kadira/storybook';
+```
+すること。
+
+### .add()
+`.add('アイコン付き',function)`
+storiesOfにメソッドチェーンして書く。モジュールの状態を追加できる。
+- 第一引数はメニューに表示されるラベルテキスト
+- 第二引数はコンポーネントを返す関数
+
+#### example
+
+```
+import React from 'react';
+import { storiesOf, action } from '@kadira/storybook';
+
+storiesOf('Button', module)
+  .add('with a text', () => (
+    <button>My First Button</button>
+  ))
+  .add('with no text', () => (
+    <button></button>
+  ));
+```
+    
+
+
+
+
